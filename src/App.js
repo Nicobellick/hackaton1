@@ -6,21 +6,19 @@ import {
   Link
 } from "react-router-dom";
 import Choice from './screens/Choice';
-import AppelApi from './components/AppelApi'
 import LoveRoom from './screens/LoveRoom'
-import StarWarsLoveur from "./screens/StarWarsLoveur"
+import StarWarsList from "./screens/StarWarsList"
 
 
 function App() {
   return (
   <div className="App">
     {/* pour test */}
-    <StarWarsLoveur />
-    <LoveRoom />
+    
     {/* pour test */}
     <Switch>
-      <Route exact path="/" component={Choice} />
-      
+      <Route exact path="/" component={StarWarsList} />
+      <Route path='/loveroom' component={LoveRoom} />
       
     </Switch>
   </div>

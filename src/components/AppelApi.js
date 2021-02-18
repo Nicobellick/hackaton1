@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from "axios"
-import StarWarsLoveur from "../screens/StarWarsLoveur"
+import StarWarsLoveur from "../screens/StarWarsList"
 
 class AppelApi extends React.Component {
     constructor(props) {

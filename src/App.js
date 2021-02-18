@@ -18,15 +18,14 @@ function App() {
             <Choice setUserChoice={setUserChoice} setUserImg={setUserImg} />
           </Route>
 
-          <Route patch="/home">
+          <Route path="/home">
             <Home userChoice={userChoice} userImg={userImg} />
           </Route>
-     <Route path="/compatibility">
+          <Route path="/compatibility">
             <Compatibility userChoice={userChoice} userImg={userImg} />
           </Route>
           <Route path="/starwarslist" component={StarWarsList} />
           <Route path="/loveroom" component={LoveRoom} />
-
         </Switch>
       </Router>
     </div>

@@ -1,34 +1,89 @@
 li {
-    list-style:none;
+  list-style: none;
 }
 .choice {
-    width: 100vw;
-    height: 100vh;
-    background: url('../img/bg-openDoor.jpg') no-repeat center ;
-    background-size: cover;
-    
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/bg-openDoor.jpg") no-repeat center;
+  background-size: cover;
 }
 .characterContainer img {
-    width:80px;
-    height:80px;
-    border-radius: 100%;
-    cursor: pointer;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
 }
-.characterContainer img:hover {
-    box-shadow: 0px 0px 10px #3F0850;
+
+.characterChoice {
+  position: absolute;
+  bottom: 5px;
+  color: white;
+}
+.characterChoice h2 {
+  color: white;
+  text-shadow: 4px 4px 0px #3f0850;
+  font-family: "Caveat", cursive;
+  font-size: 270%;
+  margin-bottom: 400px;
+  margin-left: 430px;
+  cursor: pointer;
+  animation: border-pop 1s ease-in infinite;
+  width: 400px;
+  text-align: center;
+}
+.userChoice {
+  width: 110px;
+  color: white;
+  text-shadow: 2px 2px 0px #3f0850;
+margin-left: 5px;
+  border: 1px solid #d327a4;
+
+  border-radius: 30px;
+  cursor: pointer;
+}
+.userChoice:hover {
+  box-shadow: 0px 0px 8px #9006b2;
 }
 .characterContainer {
-    display: flex;;
+  display: flex;
 }
 .character {
-    width: 120px;
-    
-border:1px solid black;
-display: flex;
-flex-direction: column;
-text-align: center;
-align-items: center;
+  width: 120px;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  
 }
 .invisible {
-    visibility: hidden;
+  display: none;
+}
+.character h3 {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 130%;
+  color: #d327a4;
+}
+@keyframes border-pop {
+  0% {
+    border: 1px solid #d327a4;
+    box-shadow: 0px 0px 8px #9006b2;
+    border-radius: 30px;
+  }
+  50% {
+    border: none;
+    box-shadow: none;
+  }
+  100% {
+    border: 1px solid #d327a4;
+    box-shadow: 0px 0px 8px #9006b2;
+    border-radius: 30px;
+  }
+}
+.visible p {
+  font-family: "Ubuntu Mono", monospace;
+}
+.character a {
+  color: white;
+  text-decoration: none;
 }

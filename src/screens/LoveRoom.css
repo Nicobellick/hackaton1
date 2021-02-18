@@ -1,0 +1,28 @@
+.loveRoom{
+    height: 1000px;
+    background: url("https://images.pexels.com/photos/1150988/pexels-photo-1150988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center;
+    background-size: cover;
+
+}
+
+.buttonStartLove{
+    color: pink;
+    font-size: 20px;
+}
+
+.charactersLoveurs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.characterLoveur{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
+
+.starWarsLoveur{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}

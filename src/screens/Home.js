@@ -3,12 +3,13 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 
 
-const Home = () => {
+const Home = props =>{
   return (
     <div className="all">
+          <h2 id="titleHome">Choose your kingdom <p id='userNameSelected'>{props.userChoice}</p><img src={props.userImg} alt={props.userChoice} id='userImg'/></h2>
       <div id="systeme_solaire">
         <div className="choixUser">
-          <h2 id="titleHome">Choose your kingdom big boy</h2>
+          
           <div id="info_soleil" className="titre_info"  onMouseEnter={() => document.querySelector('#soleil').classList.add('titleHover') } onMouseLeave={() => document.querySelector('#soleil').classList.remove('titleHover')}>
             Love Room
           </div>

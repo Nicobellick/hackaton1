@@ -4,6 +4,15 @@
       background-color: yellow;
 
 }
+#userNameSelected {
+  font-size: larger;
+  color: yellow;
+}
+#userImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
   
 /* #info_venus:hover ~ #venus.orbite,
 #info_terre:hover ~ #terre.orbite, */

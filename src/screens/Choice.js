@@ -38,15 +38,15 @@ let characters = [
 ];
 
 const Choice = () => {
-  const [userchoice, setUserchoice] = useState("");
+  const [userChoice, setUserChoice] = useState("");
   const [visible, setVisible] = useState(false);
 
-  const handelpoulet = name => {
-    setUserchoice(name);
+  const handleChange = name => {
+    setUserChoice(name);
   };
   useEffect(() => {
-    console.log(userchoice);
-  }, [userchoice]);
+    console.log(userChoice);
+  }, [userChoice]);
 
   return (
     <div className="choice">
@@ -71,7 +71,7 @@ const Choice = () => {
                 <p
                   className="userChoice"
                   onClick={e => {
-                    handelpoulet(item.name);
+                    handleChange(item.name);
                   }}
                 >
                   Choisir ce personnage

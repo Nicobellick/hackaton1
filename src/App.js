@@ -6,11 +6,13 @@ import {
   Link
 } from "react-router-dom";
 import Choice from './screens/Choice';
+import AppelApi from './components/AppelApi'
 
 
 function App() {
   return (
   <div className="App">
+    <AppelApi />
     <Switch>
       <Route exact path="/" component={Choice} />
       

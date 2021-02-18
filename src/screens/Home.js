@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 const Home = props => {
   return (
     <div className="all">
+      <h2 className="backHomePage">
+        <Link to="/">Choisir un autre personnage</Link>
+      </h2>
       <h2 id="titleHome">
         Choose your kingdom <p id="userNameSelected">{props.userChoice}</p>
         <img src={props.userImg} alt={props.userChoice} id="userImg" />
@@ -21,7 +24,7 @@ const Home = props => {
               document.querySelector("#soleil").classList.remove("titleHover")
             }
           >
-            Love Room
+            <Link to="/starwarslist"> Love Room</Link>
           </div>
           <div id="cadre_soleil">
             <h2>

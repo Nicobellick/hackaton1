@@ -10,6 +10,8 @@ import { useState } from "react";
 function App() {
   const [userChoice, setUserChoice] = useState("");
   const [userImg, setUserImg] = useState("");
+  const [loverChoice, setLoverChoice] = useState("");
+  const [loverImg, setLoverImg] = useState("");
   return (
     <div className="App">
       <Router>
@@ -24,8 +26,20 @@ function App() {
           <Route path="/compatibility">
             <Compatibility userChoice={userChoice} userImg={userImg} />
           </Route>
-          <Route path="/starwarslist" component={StarWarsList} />
-          <Route path="/loveroom" component={LoveRoom} />
+          <Route path="/starwarslist">
+            <StarWarsList
+              setLoverChoice={setLoverChoice}
+              setLoverImg={setLoverImg}
+            />
+          </Route>
+          <Route path="/loveroom">
+            <LoveRoom
+              userChoice={userChoice}
+              userImg={userImg}
+              loverChoice={loverChoice}
+              loverImg={loverImg}
+            />
+          </Route>
         </Switch>
       </Router>
     </div>

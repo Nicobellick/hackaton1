@@ -74,7 +74,7 @@ const Choice = () => {
                     handleChange(item.name);
                   }}
                 >
-                  Choisir ce personnage
+                  <Link to="/home">Choisir ce personnage</Link>
                 </p>
               </div>
             </div>

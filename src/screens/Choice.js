@@ -76,7 +76,6 @@ const Choice = () => {
       </div>
     </div>
   );
-  console.log(userchoice);
 };
 
 export default Choice;

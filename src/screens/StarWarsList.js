@@ -10,9 +10,11 @@ class StarWarsList extends React.Component {
       starWarsCharacter: [],
       sliceArray: [],
       characterLover: [],
-      characterLoverImg: []
+      characterLoverImg: [],
+      choice: false
     };
   }
+
 
   componentDidMount() {
     axios
@@ -26,7 +28,7 @@ class StarWarsList extends React.Component {
     return (
       <div className="loveRoomPlanet">
         <h1>Choisis ton cupidon</h1>
-        <Link
+        <Link className={this.state.choice !== false ? 'visible' : 'invisible'}
           to={{
             pathname: "/loveroom",
             data: {
@@ -46,7 +48,8 @@ class StarWarsList extends React.Component {
                 this.setState({ characterLover: character.name }),
                 this.setState({ characterLoverImg: character.image }),
                 this.props.setLoverChoice(character.name),
-                this.props.setLoverImg(character.image)
+                this.props.setLoverImg(character.image),
+                this.setState({choice: true})
               )}
             >
               <img

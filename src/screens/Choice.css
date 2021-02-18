@@ -22,9 +22,9 @@ li {
   color: white;
   text-shadow: 4px 4px 0px #3f0850;
   font-family: "Caveat", cursive;
-  font-size: 250%;
-  margin-bottom: 200px;
-  margin-left: 230px;
+  font-size: 270%;
+  margin-bottom: 400px;
+  margin-left: 430px;
   cursor: pointer;
   animation: border-pop 1s ease-in infinite;
   width: 400px;
@@ -34,7 +34,7 @@ li {
   width: 110px;
   color: white;
   text-shadow: 2px 2px 0px #3f0850;
-
+margin-left: 5px;
   border: 1px solid #d327a4;
 
   border-radius: 30px;
@@ -54,6 +54,7 @@ li {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  
 }
 .invisible {
   display: none;

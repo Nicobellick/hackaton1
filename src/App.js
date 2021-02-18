@@ -12,14 +12,21 @@ import Home from './screens/Home'
 function App() {
   return (
   <div className="App">
+    <Router>
     <Switch>
-      <Route exact path="/" component={Choice} />
+      <Route exact path="/" component={Choice} /> 
       <Route patch='/home' component={Home} />
       
       
+      
+      
     </Switch>
+    </Router>
   </div>
   );
 }
 
 export default App;
+
+
+

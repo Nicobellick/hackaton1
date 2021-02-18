@@ -279,15 +279,16 @@
   justify-content: center;
   border: 2px solid #d327a4;
   border-radius: 30px;
-  background: rgba(0, 0, 0, 0.252);
+  background: rgba(152, 13, 165, 0.253);
 
   color: white;
-  width: 270px;
-  font-size: 120%;
+  width: 390px;
+  font-size: 140%;
   position: absolute;
-  right: 330px;
+  right: 26%;
+  top:10%;
   font-family: "Caveat", cursive;
-  transform: rotate(11deg) translateY(30px) scale(0.45, 1);
+  transform: rotate(9deg) translateY(30px) scale(0.45, 1);
 }
 /* .header {
   display: flex;
@@ -299,10 +300,10 @@
   width: 300px;
   font-size: 150%;
   position: absolute;
-  left: 270px;
+  left: 25%;
   font-family: "Caveat", cursive;
-  transform: rotate(-10deg) translateY(30px);
-  animation: border-pop 1s ease-in infinite;
+  transform: rotate(8deg) translateY(50px);
+  
 } */
 .title {
 }

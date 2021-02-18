@@ -2,13 +2,14 @@ import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
+
 const Home = () => {
   return (
     <div className="all">
       <div id="systeme_solaire">
         <div className="choixUser">
           <h2 id="titleHome">Choose your kingdom big boy</h2>
-          <div id="info_soleil" className="titre_info">
+          <div id="info_soleil" className="titre_info"  onMouseEnter={() => document.querySelector('#soleil').classList.add('titleHover') } onMouseLeave={() => document.querySelector('#soleil').classList.remove('titleHover')}>
             Love Room
           </div>
           <div id="cadre_soleil">
@@ -19,7 +20,7 @@ const Home = () => {
             </h2>
           </div>
 
-          <div id="info_lune" className="titre_info">
+          <div id="info_lune" className="titre_info" onMouseEnter={() => document.querySelector('#lune').classList.add('titleHover') } onMouseLeave={() => document.querySelector('#lune').classList.remove('titleHover')}>
             Seduce MasterClass
           </div>
           <div id="cadre_lune">
@@ -29,7 +30,7 @@ const Home = () => {
             </h2>
           </div>
 
-          <div id="info_ceinture_asteroides" className="titre_info">
+          <div id="info_ceinture_asteroides" className="titre_info" onMouseEnter={() => document.querySelector('#ceinture_asteroides1').classList.add('titleHover') } onMouseLeave={() => document.querySelector('#ceinture_asteroides1').classList.remove('titleHover')}>
             Compatibilité Intergalactique
           </div>
           <div id="cadre_ceinture_asteroides">

@@ -11,7 +11,7 @@ let characters = [
   {
     name: "Abdou",
     description:
-      "Un père de famille veuf, cherchant à explorer sa sexualité à l'aide de robots intergalactiques",
+      "Ex taulard du 93, il n'a plus le droit de s'approcher ni de vieilles dames ni d'enfants, il s'oriente donc vers les robots intergalactiques pour assouvir ses besoins",
     image: imgAbdou,
     visible: false
   },
@@ -25,7 +25,7 @@ let characters = [
   {
     name: "Melania Trump",
     description:
-      "En tant qu'ex 1ère dame des Etats-Unis, elle souhaite conquérir de nouveaux mondes grâce à son sex-appeal légendaire",
+      "En tant qu'ex 1ère dame des Etats-Unis, elle souhaite conquérir de nouveaux mondes grâce à son sex-appeal légendaire (et un peu botoxé)",
     image: imgMelania,
     visible: false
   },
@@ -74,15 +74,20 @@ const Choice = () => {
                     handleChange(item.name);
                   }}
                 >
-                  <Link to="/home">Choisir ce personnage</Link>
+                  
+                  
+                  <Link to="/home" params={{testValue: 'Quentin'}}>Choisir ce personnage</Link> 
+                  
                 </p>
               </div>
             </div>
           ))}
+          
         </div>
       </div>
     </div>
   );
 };
+
 
 export default Choice;

@@ -82,3 +82,7 @@ li {
 .visible p {
   font-family: "Ubuntu Mono", monospace;
 }
+.character a {
+  color: white;
+  text-decoration: none;
+}

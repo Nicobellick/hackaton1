@@ -6,10 +6,14 @@ import { Link } from "react-router-dom";
 const Home = props =>{
   return (
     <div className="all">
-          <h2 id="titleHome">Choose your kingdom <p id='userNameSelected'>{props.userChoice}</p><img src={props.userImg} alt={props.userChoice} id='userImg'/></h2>
+      <header className='headerHome'>
+          <p></p>
+          <h2 id="titleHome">Choose your kingdom <p id='userNameSelected'>{props.userChoice}</p></h2>
+          <img src={props.userImg} alt={props.userChoice} id='userImg'/>
+        </header>
       <div id="systeme_solaire">
         <div className="choixUser">
-          
+        
           <div id="info_soleil" className="titre_info"  onMouseEnter={() => document.querySelector('#soleil').classList.add('titleHover') } onMouseLeave={() => document.querySelector('#soleil').classList.remove('titleHover')}>
             Love Room
           </div>

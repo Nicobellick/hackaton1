@@ -67,7 +67,7 @@ const Choice = () => {
                     console.log(userchoice);
                   }}
                 >
-                  Choisir ce personnage{" "}
+                  Choisir ce personnage
                 </p>
               </div>
             </div>

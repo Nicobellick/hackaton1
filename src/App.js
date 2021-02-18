@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import Choice from './screens/Choice';
+import Home from './screens/Home'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   <div className="App">
     <Switch>
       <Route exact path="/" component={Choice} />
+      <Route patch='/home' component={Home} />
       
       
     </Switch>

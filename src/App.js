@@ -15,7 +15,6 @@ function App() {
   return (
   <div className="App">
     {/* pour test */}
-    <AppelApi />
     <StarWarsLoveur />
     <LoveRoom />
     {/* pour test */}

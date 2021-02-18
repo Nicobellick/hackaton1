@@ -1,11 +1,13 @@
 import React from 'react'
 import axios from "axios"
+import StarWarsLoveur from "../screens/StarWarsLoveur"
 
 class AppelApi extends React.Component {
     constructor(props) {
         super(props);
     this.state={
         starWarsCharacter: [],
+        sliceArray: [],
     }
     }
     componentDidMount () {
@@ -18,7 +20,7 @@ class AppelApi extends React.Component {
        
     return(
         <div>
-            poulet
+            <StarWarsLoveur sliceArray={sliceArray}/>
         </div>
     )
     }

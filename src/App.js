@@ -7,15 +7,24 @@ import {
 } from "react-router-dom";
 import Choice from './screens/Choice';
 import Home from './screens/Home'
+import {useState} from 'react'
 
 
 function App() {
+  const [userChoice, setUserChoice] = useState("");
+  const [userImg, setUserImg] = useState('');
   return (
   <div className="App">
     <Router>
+      
     <Switch>
-      <Route exact path="/" component={Choice} /> 
-      <Route patch='/home' component={Home} />
+      <Route exact path="/"  > 
+          <Choice setUserChoice={setUserChoice} setUserImg={setUserImg}/>
+      </Route>
+      <Route patch='/home' >
+        <Home userChoice={userChoice} userImg={userImg}/>
+        </Route>
+    
       
       
       

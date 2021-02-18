@@ -37,17 +37,9 @@ let characters = [
   }
 ];
 
-const Choice = () => {
-  const [userChoice, setUserChoice] = useState("");
+const Choice = (props) => {
+  
   const [visible, setVisible] = useState(false);
-
-  const handleChange = name => {
-    setUserChoice(name);
-  };
-  useEffect(() => {
-    console.log(userChoice);
-  }, [userChoice]);
-
   return (
     <div className="choice">
       <Header />
@@ -60,7 +52,7 @@ const Choice = () => {
         </h2>
         <div className="characterContainer">
           {characters.map(item => (
-            <div className="character">
+            <div className="character" id={item.name}>
               <img
                 src={item.image}
                 className={visible === true ? "visible" : "invisible"}
@@ -70,14 +62,15 @@ const Choice = () => {
                 <p>{item.description}</p>
                 <p
                   className="userChoice"
-                  onClick={e => {
-                    handleChange(item.name);
-                  }}
-                >
-                  
-                  
-                  <Link to="/home" params={{testValue: 'Quentin'}}>Choisir ce personnage</Link> 
-                  
+                  onClick={() => {
+                    props.setUserChoice(item.name);
+                    props.setUserImg(item.image) }                
+                  }
+                >                                              
+                  <Link
+            to='/home'       
+          >Choisir ce personnage</Link>
+          
                 </p>
               </div>
             </div>

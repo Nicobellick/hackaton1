@@ -274,8 +274,8 @@
   animation: bug-letter 2.5s linear infinite;
 }
 .universe {
-  font-size:140%;
-  letter-spacing:3px;
+  font-size: 140%;
+  letter-spacing: 3px;
 }
 
 .header {
@@ -291,9 +291,6 @@
   left: 25%;
   font-family: "Caveat", cursive;
   transform: rotate(8deg) translateY(50px);
-  
-}
-.title {
 }
 
 .title h1,

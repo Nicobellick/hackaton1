@@ -2,15 +2,25 @@ import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
-
-const Home = props =>{
+const Home = props => {
   return (
     <div className="all">
-          <h2 id="titleHome">Choose your kingdom <p id='userNameSelected'>{props.userChoice}</p><img src={props.userImg} alt={props.userChoice} id='userImg'/></h2>
+      <h2 id="titleHome">
+        Choose your kingdom <p id="userNameSelected">{props.userChoice}</p>
+        <img src={props.userImg} alt={props.userChoice} id="userImg" />
+      </h2>
       <div id="systeme_solaire">
         <div className="choixUser">
-          
-          <div id="info_soleil" className="titre_info"  onMouseEnter={() => document.querySelector('#soleil').classList.add('titleHover') } onMouseLeave={() => document.querySelector('#soleil').classList.remove('titleHover')}>
+          <div
+            id="info_soleil"
+            className="titre_info"
+            onMouseEnter={() =>
+              document.querySelector("#soleil").classList.add("titleHover")
+            }
+            onMouseLeave={() =>
+              document.querySelector("#soleil").classList.remove("titleHover")
+            }
+          >
             Love Room
           </div>
           <div id="cadre_soleil">
@@ -21,7 +31,16 @@ const Home = props =>{
             </h2>
           </div>
 
-          <div id="info_lune" className="titre_info" onMouseEnter={() => document.querySelector('#lune').classList.add('titleHover') } onMouseLeave={() => document.querySelector('#lune').classList.remove('titleHover')}>
+          <div
+            id="info_lune"
+            className="titre_info"
+            onMouseEnter={() =>
+              document.querySelector("#lune").classList.add("titleHover")
+            }
+            onMouseLeave={() =>
+              document.querySelector("#lune").classList.remove("titleHover")
+            }
+          >
             Seduce MasterClass
           </div>
           <div id="cadre_lune">
@@ -31,8 +50,21 @@ const Home = props =>{
             </h2>
           </div>
 
-          <div id="info_ceinture_asteroides" className="titre_info" onMouseEnter={() => document.querySelector('#ceinture_asteroides1').classList.add('titleHover') } onMouseLeave={() => document.querySelector('#ceinture_asteroides1').classList.remove('titleHover')}>
-            Compatibilité Intergalactique
+          <div
+            id="info_ceinture_asteroides"
+            className="titre_info"
+            onMouseEnter={() =>
+              document
+                .querySelector("#ceinture_asteroides1")
+                .classList.add("titleHover")
+            }
+            onMouseLeave={() =>
+              document
+                .querySelector("#ceinture_asteroides1")
+                .classList.remove("titleHover")
+            }
+          >
+            <Link to="/compatibility">Compatibilité Intergalactique</Link>
           </div>
           <div id="cadre_ceinture_asteroides">
             <h2>

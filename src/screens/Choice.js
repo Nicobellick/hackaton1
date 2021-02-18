@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Choice.css";
 import imgAbdou from "../img/abdoutest.png";
@@ -40,6 +40,14 @@ let characters = [
 const Choice = () => {
   const [userchoice, setUserchoice] = useState("");
   const [visible, setVisible] = useState(false);
+
+  const handelpoulet = name => {
+    setUserchoice(name);
+  };
+  useEffect(() => {
+    console.log(userchoice);
+  }, [userchoice]);
+
   return (
     <div className="choice">
       <Header />
@@ -56,15 +64,14 @@ const Choice = () => {
               <img
                 src={item.image}
                 className={visible === true ? "visible" : "invisible"}
-              ></img>
+              />
               <div className={visible === true ? "visible" : "invisible"}>
                 <h3>{item.name}</h3>
                 <p>{item.description}</p>
                 <p
                   className="userChoice"
-                  onClick={() => {
-                    setUserchoice(item.name);
-                    console.log(userchoice);
+                  onClick={e => {
+                    handelpoulet(item.name);
                   }}
                 >
                   Choisir ce personnage

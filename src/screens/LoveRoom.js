@@ -1,13 +1,12 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./LoveRoom.css";
 
 const LoveRoom = props => {
-
-
   const user = props.userChoice;
   const userImg = props.userImg;
   const lover = props.loverChoice;
   const loverImg = props.loverImg;
+
 
   const quest1 = [`Salut, moi c'est ${user}, ça va ? `, 'Est-ce que tu baises ?']
   const reponse1 = ['Oui, merci beaucoup de m’avoir choisi !', `Tu te crois aussi bg qu'Olivier ?`]  
@@ -136,6 +135,7 @@ const LoveRoom = props => {
 
   </div>
   
+
 
   );
 };

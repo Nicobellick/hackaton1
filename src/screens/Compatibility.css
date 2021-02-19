@@ -1,0 +1,55 @@
+.backHomePage {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+.ou {
+  position: absolute;
+  top: 50vh;
+  right: 47.5vw;
+  font-size: 300%;
+  color: white;
+}
+.imgChoiceContainer {
+  display: flex;
+}
+.imgChoiceContainer img {
+  width: 50vw;
+  height: 100vh;
+}
+.resultMatch {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-around;
+}
+.resultMatch img {
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+}
+.compatiblePage {
+  background: #0c021f;
+}
+.lifeSide h1 {
+  color: #9006b2;
+  text-shadow: 1px 1px 2px whitesmoke;
+  font-size: 300%;
+  font-family: "Caveat", cursive;
+}
+.nightSide h1 {
+  color: #d327a4;
+  text-shadow: 1px 1px 2px whitesmoke;
+  font-size: 300%;
+  font-family: "Caveat", cursive;
+}
+.nightSide h2,
+.lifeSide h2 {
+  color: #bb519f;
+  text-shadow: 1px 1px 2px #610849;
+  font-size: 400%;
+  font-family: "Caveat", cursive;
+}
+.backHomePage:hover {
+  text-shadow: 1px 1px 1px whitesmoke;
+}

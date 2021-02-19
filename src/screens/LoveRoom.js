@@ -2,11 +2,20 @@ import React, {useState} from "react";
 import "./LoveRoom.css";
 
 const LoveRoom = props => {
+
+
   const user = props.userChoice;
   const userImg = props.userImg;
   const lover = props.loverChoice;
   const loverImg = props.loverImg;
 
+  const quest1 = [`Salut, moi c'est ${user}, ça va ? `, 'Est-ce que tu baises ?']
+  const reponse1 = ['Oui, merci beaucoup de m’avoir choisi !', 'Next !']  
+  const quest2 = ['Quentin', 'Kaiser']
+  const reponse2 = ['Je sais plus', 'ce quil faut mettre']
+
+  const [rep1, setRep1] = useState('')
+  const [rep2, setRep2] = useState('')
   const [visibleQ1, setVisibleQ1] = useState(false);
   const [visibleR1, setVisibleR1] = useState(false);
   const [visibleR2, setVisibleR2] = useState(false);
@@ -28,12 +37,20 @@ const LoveRoom = props => {
             <img className="imgPerso"src={loverImg}/>
         </div>
       </div>
-        <p className={visibleQ1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR1(!visibleR1) }}>Salut, moi c'est userName, ça va ? </p>
-        <p className={visibleQ1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR2(!visibleR2) }}>Est-ce que tu baises ? </p>
-        <p className={visibleR1 ? "reponseVisible" : "reponseInvisible"}> Oui, merci beaucoup de m’avoir choisi !
-        </p>
-        <p className={visibleR2 ? "reponseVisible" : "reponseInvisible"}> Next !</p>
+        <p className={visibleQ1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR1(!visibleR1); setRep1(true) }}>{quest1[0]}</p>
+        <p className={visibleQ1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR2(!visibleR2); setRep1(true)}}>{quest1[1]}</p>
+        <p className={visibleR1 ? "reponseVisible" : "reponseInvisible"} > {reponse1[0]}</p>
+        <p className={visibleR2 ? "reponseVisible" : "reponseInvisible"}> {reponse1[1]}</p>
+      
+      <div>
+      <p className={rep1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR1(!visibleR1); setRep2(true) }}>{quest2[0]}</p>
+      <p className={rep1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR2(!visibleR2); setRep2(true) }}>{quest2[1]}</p>
+      <p className={rep2 ? "reponseVisible" : "reponseInvisible"}> {reponse2[0]}</p>
+      <p className={rep2 ? "reponseVisible" : "reponseInvisible"}> {reponse2[1]}</p>
     </div>
+  </div>
+  
+
   );
 };
 export default LoveRoom;

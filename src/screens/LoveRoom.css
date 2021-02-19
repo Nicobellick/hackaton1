@@ -63,3 +63,11 @@
 .reponseInvisible{
     visibility: hidden;
 }
+
+.score1Invisible, .score2Invisible, .score3Invisible, .score4Invisible, .score5Invisible, .score6Invisible, .score7Invisible{
+    visibility: hidden;
+}
+
+.choiceInvisible{
+    display: none;
+}

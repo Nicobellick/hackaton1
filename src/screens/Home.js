@@ -44,7 +44,7 @@ const Home = props => {
               document.querySelector("#lune").classList.remove("titleHover")
             }
           >
-            Seduce MasterClass
+           <Link to='/seduce'> Seduce MasterClass </Link>
           </div>
           <div id="cadre_lune">
             <h2>

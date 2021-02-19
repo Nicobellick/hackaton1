@@ -63,29 +63,22 @@ const LoveRoom = props => {
 
   return (
     <div className="loveRoom">
-      <h1>Love Room</h1>
+      <h1 className="titleLoveRoom">Love Room</h1>
       <button className="buttonStartLove" onClick={() => {
         setVisibleQ1(!visibleQ1); 
-        setButton1("Introduis-toi !")}}>{button1}</button>
+        setButton1(`Introduis-toi ${user}!`)}}>{button1}</button>
       <div className="charactersLoveurs">
         <div className="characterLoveur">
-            <div className="namePerso">Ton personnage : {user}</div>
+            <div className="namePerso">{user}</div>
             <img className="imgPerso" src={userImg}/>
         </div>
         <div className="characterLoveur">
-            <div className="namePerso"> Ton choix : {lover} </div>
+            <div className="namePerso">{lover} </div>
             <img className="imgPerso"src={loverImg}/>
         </div>
-       
-        <div>
-
-          {/* En gros, fais une div tableau id= 1des réponses, tu crée une state tableau d'objet avec que des boolean,
-          chaque click passe un boolean a true et donc affiche rep1, rep2, rep3 au fur et a mesure
-          au moins il y a l'historique de toute les réponses une en dessous de l'autre, idem pour les questions et code moins lourd */
-        }</div>
-
       </div>
-      <div className={(button1 ==="Introduis-toi !" && !choice2) ? "choiceVisible" : "choiceInvisible" }>
+
+      <div className={(button1 ===`Introduis-toi ${user}!` && !choice2) ? "choiceVisible" : "choiceInvisible" }>
         <p className={visibleQ1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR1(!visibleR1); setRep1(true) }}>{quest1[0]}</p>
         <p className={visibleQ1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR2(!visibleR2); setRep1(true)}}>{quest1[1]}</p>
         <p className={visibleR1 ? "reponseVisible" : "reponseInvisible"} > {reponse1[0]}</p>
@@ -138,7 +131,7 @@ const LoveRoom = props => {
       <p className={visibleQ7 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR14(!visibleR14); setRep7(true) }}>{quest7[1]}</p>
       <p className={visibleR13 ? "reponseVisible" : "reponseInvisible"}> {reponse7[0]}</p>
       <p className={visibleR14 ? "reponseVisible" : "reponseInvisible"}> {reponse7[1]}</p>
-      <button className={(visibleR13 || visibleR14) ? "score6Visible" : "score6Invisible"}>BRAVO VOUS AVEZ PECHO !</button> 
+      <p className={(visibleR13 || visibleR14) ? "score6Visible" : "score6Invisible"}>BRAVO VOUS AVEZ PECHO !</p> 
     </div>
 
   </div>

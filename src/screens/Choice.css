@@ -18,48 +18,50 @@ li {
   bottom: 5px;
   color: white;
 }
-.characterChoice h2 {
+.choice h2 {
+  position: absolute;
+  top: 50vh;
+  left: 20vw;
   color: white;
   text-shadow: 4px 4px 0px #3f0850;
   font-family: "Caveat", cursive;
   font-size: 270%;
-  margin-bottom: 400px;
-  margin-left: 430px;
+  padding-left: 30px;
   cursor: pointer;
   animation: border-pop 1s ease-in infinite;
   width: 400px;
   text-align: center;
 }
-.userChoice {
+.userChoiceBtn {
   width: 110px;
   color: white;
   text-shadow: 2px 2px 0px #3f0850;
-margin-left: 5px;
+  margin-left: 5px;
   border: 1px solid #d327a4;
-
   border-radius: 30px;
   cursor: pointer;
 }
-.userChoice:hover {
+.visible {
+  text-align: center;
+}
+.userChoiceBtn:hover {
   box-shadow: 0px 0px 8px #9006b2;
 }
 .characterContainer {
   display: flex;
 }
-.character {
-  width: 120px;
-  margin-right: 20px;
-  margin-left: 20px;
+.characterListChoice {
+  width: 180px;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  
+  margin: 10px;
 }
 .invisible {
   display: none;
 }
-.character h3 {
+.characterListChoice h3 {
   font-family: "Ubuntu Mono", monospace;
   font-size: 130%;
   color: #d327a4;
@@ -83,7 +85,7 @@ margin-left: 5px;
 .visible p {
   font-family: "Ubuntu Mono", monospace;
 }
-.character a {
+.characterListChoice a {
   color: white;
   text-decoration: none;
 }

@@ -37,50 +37,44 @@ let characters = [
   }
 ];
 
-const Choice = (props) => {
-  
+const Choice = props => {
   const [visible, setVisible] = useState(false);
   return (
     <div className="choice">
       <Header />
+      <h2
+        className={visible === true ? "invisible" : "visible"}
+        onClick={() => setVisible(!visible)}
+      >
+        Choisir un personnage
+      </h2>
       <div className="characterChoice">
-        <h2
-          className={visible === true ? "invisible" : "visible"}
-          onClick={() => setVisible(!visible)}
-        >
-          Choisir un personnage
-        </h2>
         <div className="characterContainer">
           {characters.map(item => (
-            <div className="character" id={item.name}>
-              <img
-                src={item.image}
-                className={visible === true ? "visible" : "invisible"}
-              />
-              <div className={visible === true ? "visible" : "invisible"}>
+            <div className={visible === true ? "visible" : "invisible"}>
+              <div className="characterListChoice" id={item.name}>
+                <img
+                  src={item.image}
+                  className={visible === true ? "visible" : "invisible"}
+                />
                 <h3>{item.name}</h3>
                 <p>{item.description}</p>
                 <p
-                  className="userChoice"
+                  className="userChoiceBtn"
                   onClick={() => {
                     props.setUserChoice(item.name);
-                    props.setUserImg(item.image) }                
-                  }
-                >                                              
-                  <Link
-            to='/home'       
-          >Choisir ce personnage</Link>
-          
+                    props.setUserImg(item.image);
+                  }}
+                >
+                  <Link to="/home">Choisir ce personnage</Link>
                 </p>
               </div>
             </div>
           ))}
-          
         </div>
       </div>
     </div>
   );
 };
-
 
 export default Choice;

@@ -96,7 +96,9 @@ const LoveRoom = props => {
     <div className="loveRoom">
       <h1 className="titleLoveRoom">Love Room</h1>
       <h2 className="backHomePage">
-        <Link to="/starwarslist">Retente ta chance avec un(e) autre ❤</Link>
+        <Link to="/starwarslist">
+          Retente ta chance avec un(e) autre <span className="pinky">❤</span>
+        </Link>
       </h2>
       <button
         className="buttonStartLove"

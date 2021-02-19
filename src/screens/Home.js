@@ -6,7 +6,9 @@ const Home = props => {
   return (
     <div className="all">
       <h2 className="backHomePage">
-        <Link to="/">Choisir un autre personnage ❤</Link>
+        <Link to="/">
+          Choisir un autre personnage <span className="pinky">❤</span>
+        </Link>
       </h2>
       <h2 id="titleHome">
         En manque <span id="userNameSelected">{props.userChoice}</span> ?

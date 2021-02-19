@@ -122,44 +122,65 @@ const Compatibility = props => {
             </h2>
             <div className="lifeSide">
               <h1>Pour la vie</h1>
-              <h2>{listCharacter[28].name}</h2>
+              <h2>
+                {listCharacter[28].name}
+                <span className="pinky">❤</span>
+              </h2>
               <img src={listCharacter[28].image} alt={listCharacter[28].name} />
             </div>
             <div className="nightSide">
               <h1>Pour une nuit</h1>
-              <h2>{listCharacter[18].name}</h2>
+              <h2>
+                {listCharacter[18].name} <span className="pinky">💋</span>
+              </h2>
               <img src={listCharacter[18].image} alt={listCharacter[18].name} />
             </div>
           </div>
         ) : scoreTotal === 2 ? (
           <div className="resultMatch">
             <h2 className="backHomePage">
-              <Link to="/home">Retour dans la galaxy</Link>
+              <Link to="/home">
+                Retour dans la galaxy <span className="pinky">❤</span>
+              </Link>
             </h2>
             <div className="lifeSide">
               <h1>Pour la vie</h1>
-              <h2>{listCharacter[12].name}</h2>
+              <h2>
+                {listCharacter[12].name}
+                <span className="pinky">❤</span>
+              </h2>
               <img src={listCharacter[12].image} alt={listCharacter[18].name} />
             </div>
             <div className="nightSide">
               <h1>Pour une nuit</h1>
-              <h2>{listCharacter[78].name}</h2>
+              <h2>
+                {listCharacter[78].name}
+                <span className="pinky">💋</span>
+              </h2>
               <img src={listCharacter[78].image} alt={listCharacter[3].name} />
             </div>
           </div>
         ) : scoreTotal === 3 ? (
           <div className="resultMatch">
             <h2 className="backHomePage">
-              <Link to="/home">Retour dans la galaxy</Link>
+              <Link to="/home">
+                Retour dans la galaxy <span className="pinky">❤</span>
+              </Link>
             </h2>
             <div className="lifeSide">
               <h1>Pour la vie</h1>
-              <h2>{listCharacter[77].name}</h2>
+              <h2>
+                {listCharacter[77].name}
+                <span className="pinky">❤</span>
+              </h2>
               <img src={listCharacter[77].image} alt={listCharacter[18].name} />
             </div>
             <div className="nightSide">
               <h1>Pour une nuit</h1>
-              <h2>{listCharacter[21].name}</h2>
+              <h2>
+                {listCharacter[21].name}
+                <span className="pinky">💋</span>
+              </h2>
               <img src={listCharacter[21].image} alt={listCharacter[3].name} />
             </div>
           </div>
@@ -170,44 +191,60 @@ const Compatibility = props => {
             </h2>
             <div className="lifeSide">
               <h1>Pour la vie</h1>
-              <h2>{listCharacter[1].name}</h2>
+              <h2>
+                {listCharacter[1].name} <span className="pinky">❤</span>
+              </h2>
               <img src={listCharacter[1].image} alt={listCharacter[18].name} />
             </div>
             <div className="nightSide">
               <h1>Pour une nuit</h1>
-              <h2>{listCharacter[3].name}</h2>
+              <h2>
+                {listCharacter[3].name} <span className="pinky">💋</span>
+              </h2>
               <img src={listCharacter[3].image} alt={listCharacter[3].name} />
             </div>
           </div>
         ) : scoreTotal > 100 && scoreTotal < 200 ? (
           <div className="resultMatch">
             <h2 className="backHomePage">
-              <Link to="/home">Retour dans la galaxy</Link>
+              <Link to="/home">
+                Retour dans la galaxy <span className="pinky">❤</span>
+              </Link>
             </h2>
             <div className="lifeSide">
               <h1>Pour la vie</h1>
-              <h2>{listCharacter[55].name}</h2>
+              <h2>
+                {listCharacter[55].name} <span className="pinky">❤</span>
+              </h2>
               <img src={listCharacter[55].image} alt={listCharacter[55].name} />
             </div>
             <div className="nightSide">
               <h1>Pour une nuit</h1>
-              <h2>{listCharacter[55].name}</h2>
+              <h2>
+                {listCharacter[55].name} <span className="pinky">💋</span>
+              </h2>
               <img src={listCharacter[55].image} alt={listCharacter[55].name} />
             </div>
           </div>
         ) : scoreTotal > 200 ? (
           <div className="resultMatch">
             <h2 className="backHomePage">
-              <Link to="/home">Retour dans la galaxy</Link>
+              <Link to="/home">
+                Retour dans la galaxy <span className="pinky">❤</span>
+              </Link>
             </h2>
             <div className="lifeSide">
               <h1>Pour la vie</h1>
-              <h2>{listCharacter[42].name}</h2>
+              <h2>
+                {listCharacter[42].name} <span className="pinky">❤</span>
+              </h2>
               <img src={listCharacter[42].image} alt={listCharacter[55].name} />
             </div>
             <div className="nightSide">
               <h1>Pour une nuit</h1>
-              <h2>{listCharacter[43].name}</h2>
+              <h2>
+                {listCharacter[43].name} <span className="pinky">💋</span>
+              </h2>
               <img src={listCharacter[43].image} alt={listCharacter[55].name} />
             </div>
           </div>

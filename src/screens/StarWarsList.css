@@ -48,6 +48,7 @@
 }
 .globalCardLoveur:hover {
   transform: scale(1.3);
+  transition: 0.5s;
   cursor: pointer;
   z-index: 100;
   background-color: rgb(255, 255, 255);

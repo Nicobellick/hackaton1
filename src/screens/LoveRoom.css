@@ -18,6 +18,7 @@
   padding: 20px;
 }
 
+
 .buttonStartLove {
   background-color: #0c021f;
   color: #d327a4;
@@ -114,6 +115,7 @@
   visibility: hidden;
 }
 
+
 .score1Visible,
 .score2Visible,
 .score3Visible,
@@ -130,7 +132,7 @@
   box-shadow: 0px 0px 15px #3f0850;
 }
 .score6Visible {
-  color: #d327a4;
+  font-weight: bold;
   padding: 10px;
   text-align: center;
   font-family: "Caveat", cursive;
@@ -138,6 +140,9 @@
   border-radius: 20px;
   width: 300px;
   align-self: center;
+  margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
 }
 .score1Visible:hover,
 .score2Visible:hover,

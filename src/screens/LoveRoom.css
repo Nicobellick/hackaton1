@@ -63,3 +63,14 @@
 .reponseInvisible{
     visibility: hidden;
 }
+
+.scoreVisible{
+    width: 200px;
+    background-color: #0C021F;
+    color: #D327A4;
+    align-items: center;
+}
+
+.scoreInvisible{
+    visibility: hidden;
+}

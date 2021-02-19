@@ -28,9 +28,12 @@ li {
   font-size: 270%;
   padding-left: 30px;
   cursor: pointer;
-  animation: border-pop 1s ease-in infinite;
+  border: 1px solid #d327a4;
+  animation: bug-box 3.5s linear infinite;
+  border-radius: 20px;
   width: 400px;
   text-align: center;
+  transform: rotate(-10deg);
 }
 .userChoiceBtn {
   width: 110px;

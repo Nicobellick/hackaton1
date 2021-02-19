@@ -6,10 +6,11 @@ const Home = props => {
   return (
     <div className="all">
       <h2 className="backHomePage">
-        <Link to="/">Choisir un autre personnage</Link>
+        <Link to="/">Choisir un autre personnage ❤</Link>
       </h2>
       <h2 id="titleHome">
-        Choose your kingdom <p id="userNameSelected">{props.userChoice}</p>
+        En manque <span id="userNameSelected">{props.userChoice}</span> ?
+        <p>Choisis ta planète ❤ </p>
         <img src={props.userImg} alt={props.userChoice} id="userImg" />
       </h2>
       <div id="systeme_solaire">
@@ -44,7 +45,7 @@ const Home = props => {
               document.querySelector("#lune").classList.remove("titleHover")
             }
           >
-           <Link to='/seduce'> Seduce MasterClass </Link>
+            <Link to="/seduce"> Seduce MasterClass </Link>
           </div>
           <div id="cadre_lune">
             <h2>
@@ -58,12 +59,12 @@ const Home = props => {
             className="titre_info"
             onMouseEnter={() =>
               document
-                .querySelector("#ceinture_asteroides1")
+                .querySelector("#ceinture_asteroides")
                 .classList.add("titleHover")
             }
             onMouseLeave={() =>
               document
-                .querySelector("#ceinture_asteroides1")
+                .querySelector("#ceinture_asteroides")
                 .classList.remove("titleHover")
             }
           >

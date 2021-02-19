@@ -18,7 +18,7 @@ let characters = [
   {
     name: "Coronavirus",
     description:
-      "Jeune virus sans ami, un petit peu oppressant. Cherche à voyager sur une nouvelle planète pour enfin trouver un être aimant",
+      "Jeune virus sans ami, un petit peu oppressant. Cherche à voyager sur une nouvelle planète pour enfin trouver un être attentionné pouvant prendre soin de cette ame sensible",
     image: imgTest,
     visible: false
   },
@@ -31,7 +31,8 @@ let characters = [
   },
   {
     name: "Blob Fish",
-    description: "Le poisson le plus célèbre mais aussi le plus moche du monde",
+    description:
+      "Ancien humain et étudiant à la Wild Code School, il est comme ca depuis son premier hackaton avec Abdou. Il est maintenant connu en tant que Blob Fish l'Animal le plus laid au monde",
     image: imgBlob,
     visible: false
   }

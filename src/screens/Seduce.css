@@ -6,6 +6,33 @@
     padding-top: 10px;
     text-align: center;
 }
+#titleSeduce {
+    font-family: "Ubuntu Mono", monospace;
+    animation: title 6s linear infinite;
+}
+.planet {
+    font-family: "Ubuntu Mono", monospace;
+    color: #9006b2;
+}
+
+  
+  @keyframes title {
+    from {
+      color: #3f0850;
+    }
+    25% {
+      color: #9006b2;
+    }
+    50% {
+      color: #d327a4;
+    }
+    75% {
+      color: #9006b2;
+    }
+    to {
+      color: #3f0850;
+    }
+  }
 .listPlanet {
     font-weight: 800;
     font-size: 40px;
@@ -48,4 +75,10 @@
     font-weight: bold;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-family: "Caveat", cursive;
+    font-size: 25px;
+}
+#adviceVador {
+    font-family: "Caveat", cursive;
+    font-size: 30px
 }

@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 .loveRoom{
     height: 1000px;
     background: url("https://images.pexels.com/photos/1150988/pexels-photo-1150988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center;
     background-size: cover;
 
+}
+
+.titleLoveRoom{
+    font-family: "Caveat", cursive;
+    font-size: 50px;
+    color: white;   
+    text-shadow: 1px 1px 1px #d327a4;
 }
 
 .buttonStartLove{
@@ -14,17 +22,20 @@
 
 .charactersLoveurs{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 
 .characterLoveur{
-    width: 200px;
-    height: 200px;
-    background-color: pink;
+    width: 150px;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .namePerso{
@@ -44,6 +55,7 @@
     margin: 10px;
     width: 200px;
     margin-left: 500px;
+    border-radius: 20px;
 }
 
 .questionInvisible{
@@ -57,9 +69,45 @@
     padding: 5px;
     margin: 10px;
     width: 200px;
-    margin-left: 800px;
+    margin-left: 820px;
+    border-radius: 20px;
+    
 }
 
 .reponseInvisible{
     visibility: hidden;
+}
+
+.score1Invisible, .score2Invisible, .score3Invisible, .score4Invisible, .score5Invisible, .score6Invisible, .score7Invisible{
+    visibility: hidden;
+}
+
+.score1Visible, .score2Visible, .score3Visible, .score4Visible, .score5Visible{
+    background-color:#0C021F;
+    color:#D327A4;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    border-radius: 20px;
+    border: 1px solid  #D327A4;
+    box-shadow: 0px 0px 15px #3F0850;
+}
+.score6Visible{
+    color:#D327A4;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    border-radius: 20px;
+    width: 300px;
+    align-self: center;
+}
+.score1Visible:hover , .score2Visible:hover, .score3Visible:hover, .score4Visible:hover, .score5Visible:hover{
+    border: 1px solid  White;
+    box-shadow: 0px 0px 15px White;
+    cursor: pointer;
+}
+.choiceInvisible{
+    display: none;
 }

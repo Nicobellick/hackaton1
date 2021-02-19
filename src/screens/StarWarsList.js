@@ -27,7 +27,9 @@ class StarWarsList extends React.Component {
     return (
       <div className="loveRoomPlanet">
         <h2 className="backHomePage">
-          <Link to="/home">Retour dans la galaxy ❤</Link>
+          <Link to="/home">
+            Retour dans la galaxy <span className="pinky">❤</span>
+          </Link>
         </h2>
         <h1 className="cupidon">Choisis ton cupidon</h1>
         <Link

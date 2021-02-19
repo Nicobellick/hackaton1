@@ -10,7 +10,7 @@ const LoveRoom = props => {
   const loverImg = props.loverImg;
 
   const quest1 = [`Salut, moi c'est ${user}, ça va ? `, 'Est-ce que tu baises ?']
-  const reponse1 = ['Oui, merci beaucoup de m’avoir choisi !', 'Next !']  
+  const reponse1 = ['Oui, merci beaucoup de m’avoir choisi !', 'Tu te crois aussi bg qu Olivier ?]  
   const quest2 = ['Quentin', 'Kaiser']
   const reponse2 = ['Je sais plus', 'ce quil faut mettre']
 
@@ -36,6 +36,19 @@ const LoveRoom = props => {
             <div className="namePerso"> Ton choix : {lover} </div>
             <img className="imgPerso"src={loverImg}/>
         </div>
+        <p></p>
+        <div>
+
+
+
+
+          {/* En gros, fais une div tableau id= 1des réponses, tu crée une state tableau d'objet avec que des boolean,
+          chaque click passe un boolean a true et donc affiche rep1, rep2, rep3 au fur et a mesure
+          au moins il y a l'historique de toute les réponses une en dessous de l'autre, idem pour les questions et code moins lourd */
+        }</div>
+
+
+
       </div>
         <p className={visibleQ1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR1(!visibleR1); setRep1(true) }}>{quest1[0]}</p>
         <p className={visibleQ1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR2(!visibleR2); setRep1(true)}}>{quest1[1]}</p>

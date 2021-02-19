@@ -15,7 +15,6 @@ class StarWarsList extends React.Component {
     };
   }
 
-
   componentDidMount() {
     axios
       .get("https://miadil.github.io/starwars-api/api/all.json")
@@ -27,8 +26,16 @@ class StarWarsList extends React.Component {
 
     return (
       <div className="loveRoomPlanet">
-        <h1>Choisis ton cupidon</h1>
-        <Link className={this.state.choice !== false ? 'visible' : 'invisible'}
+        <h2 className="backHomePage">
+          <Link to="/home">Retour dans la galaxy ❤</Link>
+        </h2>
+        <h1 className="cupidon">Choisis ton cupidon</h1>
+        <Link
+          className={
+            this.state.choice !== false
+              ? "visibleChoiceLover"
+              : "invisibleChoiceLover"
+          }
           to={{
             pathname: "/loveroom",
             data: {
@@ -49,7 +56,7 @@ class StarWarsList extends React.Component {
                 this.setState({ characterLoverImg: character.image }),
                 this.props.setLoverChoice(character.name),
                 this.props.setLoverImg(character.image),
-                this.setState({choice: true})
+                this.setState({ choice: true })
               )}
             >
               <img
@@ -60,7 +67,6 @@ class StarWarsList extends React.Component {
               <div className="nameLoveur">{character.name}</div>
             </div>
           ))}
-          <Link to="/">Retour à la galaxie</Link>
         </div>
       </div>
     );

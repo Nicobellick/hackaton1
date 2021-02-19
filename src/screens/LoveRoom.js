@@ -9,10 +9,10 @@ const LoveRoom = props => {
   const lover = props.loverChoice;
   const loverImg = props.loverImg;
 
-  const quest1 = [`Salut, moi c'est ${user}, ça va ? `, 'Est-ce que tu baises ?']
-  const reponse1 = ['Oui, merci beaucoup de m’avoir choisi !', 'Tu te crois aussi bg qu Olivier ?]  
-  const quest2 = ['Quentin', 'Kaiser']
-  const reponse2 = ['Je sais plus', 'ce quil faut mettre']
+  // const quest1 = [`Salut, moi c'est ${user}, ça va ? `, 'Est-ce que tu baises ?']
+  // const reponse1 = ['Oui, merci beaucoup de m’avoir choisi !', 'Tu te crois aussi bg qu Olivier ?]  
+  // const quest2 = ['Quentin', 'Kaiser']
+  // const reponse2 = ['Je sais plus', 'ce quil faut mettre']
 
   const [rep1, setRep1] = useState('')
   const [rep2, setRep2] = useState('')
@@ -50,7 +50,7 @@ const LoveRoom = props => {
 
 
       </div>
-        <p className={visibleQ1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR1(!visibleR1); setRep1(true) }}>{quest1[0]}</p>
+        {/* <p className={visibleQ1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR1(!visibleR1); setRep1(true) }}>{quest1[0]}</p>
         <p className={visibleQ1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR2(!visibleR2); setRep1(true)}}>{quest1[1]}</p>
         <p className={visibleR1 ? "reponseVisible" : "reponseInvisible"} > {reponse1[0]}</p>
         <p className={visibleR2 ? "reponseVisible" : "reponseInvisible"}> {reponse1[1]}</p>
@@ -59,8 +59,8 @@ const LoveRoom = props => {
       <p className={rep1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR1(!visibleR1); setRep2(true) }}>{quest2[0]}</p>
       <p className={rep1 ? "questionVisible" : "questionInvisible"} onClick={() => {setVisibleR2(!visibleR2); setRep2(true) }}>{quest2[1]}</p>
       <p className={rep2 ? "reponseVisible" : "reponseInvisible"}> {reponse2[0]}</p>
-      <p className={rep2 ? "reponseVisible" : "reponseInvisible"}> {reponse2[1]}</p>
-    </div>
+      <p className={rep2 ? "reponseVisible" : "reponseInvisible"}> {reponse2[1]}</p> */}
+    {/* </div> */}
   </div>
   
 

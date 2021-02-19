@@ -2,6 +2,19 @@
   position: absolute;
   top: 0px;
   left: 5px;
+  border: 1px solid #d327a4;
+  box-shadow: 0px 0px 8px #9006b2;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Caveat", cursive;
+  font-size: 200%;
+}
+.backHomePage:hover {
+  box-shadow: 0px 0px 20px #9006b2;
+}
+.backHomePage a {
+  color: white;
+  text-shadow: 1px 1px 1px #d327a4;
 }
 .ou {
   position: absolute;

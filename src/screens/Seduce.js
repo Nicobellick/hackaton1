@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Seduce.css";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 const tatooine = [
   "- Prends ta douche au vinaigre",
   "- Rince toi le visage avec du salami",
@@ -45,6 +45,9 @@ const Seduce = () => {
 
   return (
     <div className="bgSeduce">
+      <h2 className="backHomePage">
+        <Link to="/home">Retour vers la galaxy ❤</Link>
+      </h2>
       <h2>Choisis une planete et obtiens les conseils</h2>
       <ul className="listPlanet">
         <li

@@ -118,7 +118,7 @@ const Compatibility = props => {
         ) : scoreTotal === 1 ? (
           <div className="resultMatch">
             <h2 className="backHomePage">
-              <Link to="/home">Retour dans la galaxy</Link>
+              <Link to="/home">Retour vers la galaxy ❤</Link>
             </h2>
             <div className="lifeSide">
               <h1>Pour la vie</h1>

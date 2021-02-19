@@ -59,12 +59,12 @@ const Home = props => {
             className="titre_info"
             onMouseEnter={() =>
               document
-                .querySelector("#ceinture_asteroides1")
+                .querySelector("#ceinture_asteroides")
                 .classList.add("titleHover")
             }
             onMouseLeave={() =>
               document
-                .querySelector("#ceinture_asteroides1")
+                .querySelector("#ceinture_asteroides")
                 .classList.remove("titleHover")
             }
           >

@@ -12,6 +12,9 @@
   height: 120px;
   border-radius: 100%;
 }
+a {
+  text-decoration: none;
+}
 
 /* #info_venus:hover ~ #venus.orbite,
 #info_terre:hover ~ #terre.orbite, */

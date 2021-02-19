@@ -4,6 +4,10 @@
     background-size: cover;
 }
 
+.invisible {
+    display: none
+}
+
 .starWarsLoveurs {
 	width: 100%;
 	display: flex;
@@ -21,6 +25,14 @@
     justify-content: center;
     align-items: center;
     background-color: white;
+}
+.globalCardLoveur:hover{
+    transform: scale(1.3);
+    cursor: pointer
+}
+.selected{
+    border-style: solid;
+    border-color: #D327A4;
 }
 .imageLoveur{
     width: 120px;

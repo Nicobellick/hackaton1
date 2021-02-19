@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
 .loveRoom{
     height: 1000px;
     background: url("https://images.pexels.com/photos/1150988/pexels-photo-1150988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center;
@@ -19,10 +21,45 @@
     width: 200px;
     height: 200px;
     background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.starWarsLoveur{
+.namePerso{
+   color: #D327A4;
+}
+
+.imgPerso{
+ width: 120px;
+ height: 150px;
+}
+
+.questionVisible{
+    font-family: 'Syne Mono', monospace;
+    background-color: white;
+    color: #0C021F;
+    padding: 5px;
+    margin: 10px;
     width: 200px;
-    height: 200px;
-    background-color: red;
+    margin-left: 500px;
+}
+
+.questionInvisible{
+    visibility: hidden;
+}
+
+.reponseVisible{
+    font-family: 'Syne Mono', monospace;
+    background-color: white;
+    color: #0C021F;
+    padding: 5px;
+    margin: 10px;
+    width: 200px;
+    margin-left: 800px;
+}
+
+.reponseInvisible{
+    visibility: hidden;
 }

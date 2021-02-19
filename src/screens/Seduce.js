@@ -46,9 +46,11 @@ const Seduce = () => {
   return (
     <div className="bgSeduce">
       <h2 className="backHomePage">
-        <Link to="/home">Retour vers la galaxy ❤</Link>
+        <Link to="/home">
+          Retour vers la galaxy <span className="pinky">❤</span>
+        </Link>
       </h2>
-      <h2 id='titleSeduce'>Choisis une planete et obtiens les conseils</h2>
+      <h2 id="titleSeduce">Choisis une planete et obtiens les conseils</h2>
       <ul className="listPlanet">
         <li
           className="planet"
@@ -98,7 +100,7 @@ const Seduce = () => {
       <div>
         <div className="advice">
           <div classList="listAdvice" style={{ width: "400px" }}>
-            <h3 id='adviceVador'>Les conseils seduction de Dark Vador</h3>
+            <h3 id="adviceVador">Les conseils seduction de Dark Vador</h3>
             {advice == "tatooine" ? (
               <ul>
                 <li className="conseilList">{tatooine[0]}</li>
